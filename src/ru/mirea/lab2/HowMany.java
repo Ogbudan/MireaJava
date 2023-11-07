@@ -18,7 +18,17 @@ public class HowMany {
             return 0;
         }
 
-        String[] words = input.trim().split("\\s+");
-        return words.length;
+        String[] words = input.split("\\s+");
+        int count = 0;
+        for (String word : words) {
+            if (word.matches("[a-zA-Zа-яА-Я]+")) {
+                count++;
+            }
+        }
+        return count;
     }
 }
+
+
+
+
