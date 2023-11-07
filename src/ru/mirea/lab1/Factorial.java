@@ -9,9 +9,12 @@ public class Factorial {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
 
-        long factorial = calculateFactorial(number);
-
-        System.out.println("Факториал числа " + number + " равен: " + factorial);
+        if (number < 0) {
+            System.out.println("Введено неверное число. Число должно быть больше или равно 0.");
+        } else {
+            long factorial = calculateFactorial(number);
+            System.out.println("Факториал числа " + number + " равен: " + factorial);
+        }
     }
 
     public static long calculateFactorial(int number) {
