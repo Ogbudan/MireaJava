@@ -1,0 +1,7 @@
+package ru.mirea.lab4.Atelie;
+
+public interface WomenClothing {
+    default void dressWoman(){
+
+    }
+}
