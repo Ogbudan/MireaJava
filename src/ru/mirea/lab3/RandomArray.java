@@ -3,6 +3,9 @@ package ru.mirea.lab3;
 import java.util.Arrays;
 import java.util.Random;
 
+//Создать массив вещественных чисел случайным образом, вывести его
+//на экран, отсортировать его, и снова вывести на экран (использовать два подхода
+//к генерации случайных чисел – метод random() класса Math и класс Random)
 public class RandomArray {
     public static void main(String[] args) {
         double[] numbers = new double[10];
